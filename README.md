@@ -31,7 +31,7 @@ cd superset
 ## 3️⃣ Launch Superset Through Docker Compose
 1. docker compose up -d --build
 2. docker compose logs -f superset_app
-Look for: * Running on http://0.0.0.0:8088/ if there proceed to next step
+Look for: * Running on http://0.0.0.0:8088/ OR http://0.0.0.0:9090/ if there proceed to next step
 3. docker compose exec superset superset db upgrade
 4. docker compose exec superset superset fab create-admin --username admin --password admin --email admin@example.com --firstname Admin --lastname User
 IF IT SAY ALREADY EXIST, PROCEED TO NEXT STEP
